@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="borderPaneMenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" styleClass="borderPaneMenu" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quanlytieccuoi.views.SumaryMenuController">
+   <bottom>
+      <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#huyMenu" prefHeight="60.0" prefWidth="100.0" text="Huỷ" />
+            <Button mnemonicParsing="false" onAction="#SaveMenu" prefHeight="60.0" prefWidth="100.0" text="Luu" />
+            <ComboBox fx:id="comboBoxTiec" prefHeight="60.0" prefWidth="100.0" promptText="Tiec" />
+            <ComboBox fx:id="comboBoxBep" prefHeight="60.0" prefWidth="100.0" promptText="Bep" />
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" />
+         </padding>
+      </HBox>
+   </bottom>
+   <center>
+      <TableView fx:id="tableViewMenu" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <columns>
+            <TableColumn fx:id="colTenMon" prefWidth="75.0" text="Ten Mon" />
+            <TableColumn fx:id="colGiaTien" prefWidth="75.0" text="Gia Tien" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </center>
+   <top>
+      <Text fill="#721793" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chi Tiet Menu" textAlignment="CENTER" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font></Text>
+   </top>
+</BorderPane>

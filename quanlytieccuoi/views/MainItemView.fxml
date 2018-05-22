@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" styleClass="anhnen" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quanlytieccuoi.views.MainItemsViewController">
+   <top>
+      <Label styleClass="title" stylesheets="@../style.css" text="QUẢN LÝ TIỆC CƯỚI" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" stylesheets="@../style.css" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="goTuVan" mnemonicParsing="false" onAction="#goTuVan" prefHeight="150.0" prefWidth="150.0" styleClass="tuvan" />
+            <Button mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" styleClass="quanly" />
+            <Button mnemonicParsing="false" onAction="#goThongKe" prefHeight="150.0" prefWidth="150.0" styleClass="thongke" />
+         </children>
+      </HBox>
+   </center>
+   <bottom>
+      <Button mnemonicParsing="false" onAction="#goBackHome" text="Trang Chu" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="20.0" />
+         </BorderPane.margin></Button>
+   </bottom>
+</BorderPane>

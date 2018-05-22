@@ -1,0 +1,114 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 28, 2018, 7:23:54 AM
+    Author     : THANHSEN
+*/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 27, 2018, 11:13:31 PM
+    Author     : THANHSEN
+*/
+/*BorderPane{
+    -fx-text-fill: white;
+    -fx-font-size: 14;
+}*/
+BorderPane.anhnen {
+    -fx-background-image: url(image/background.png);
+    -fx-background-size: stretch;
+    -fx-font-family: "Arial";
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    -fx-padding: 10;
+}
+AnchorPane.menu{
+    -fx-background-color: #e3e1ed;
+    -fx-opacity: 0.9;
+}
+
+Label.title{
+    -fx-padding: 30 0 20 0;
+    -fx-text-fill: whitesmoke;
+    -fx-stroke: #d1f45f;
+    -fx-stroke-width: 3;
+    -fx-font-size: 34;
+}
+
+HBox {
+    -fx-padding: 10 20 30 20;
+    -fx-width: 790;
+    -fx-height: 800;
+    -fx-alignment: center;
+}
+Button {
+    -fx-pref-tile-width: 150;
+    -fx-pref-tile-height: 150;
+    -fx-padding: 10;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 150 150;
+    -fx-alignment: center;
+}
+Button.tuvan {
+    -fx-background-image:  url(image/NhanVien.png);
+}
+Button.quanly {
+    -fx-background-image: url(image/QuanLy.png);
+}
+Button.thongke {
+    -fx-background-image: url(image/ThongKee.png);
+}
+Label.menulbl{
+    -fx-text-fill: #4a23bc;
+    -fx-font-size: 17;
+    -fx-alignment: center;
+}
+GridPane.monItems VBox{
+    -fx-spacing: 5;
+}
+GridPane.monItems VBox CheckBox{
+    -fx-text-fill: black;
+    -fx-font-size:14;
+}
+BorderPane.borderPaneMenu VBox{
+    -fx-padding: 20;
+}
+GridPane.sanhPane{
+    -fx-padding: 10;
+}
+Text.formTitle{
+    -fx-font-size: 30;
+    -fx-text-fill: #4a23bc;
+    -fx-font-weight:bold;
+}
+.tabPane{
+    -fx-border-color: black;
+    -fx-border-width: 5;
+}
+.chart-pie-label-line {
+    -fx-fill: red;
+}
+
+.chart-pie-label { 
+    -fx-fill: white;
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-stroke: red; 
+    -fx-stroke-weight: 6; 
+}
+.lblSanh{
+    -fx-text-fill: #4a23bc;
+    -fx-font-size: 15;
+    -fx-alignment: center;
+}
+
+
+
+
+

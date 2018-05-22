@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" spacing="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quanlytieccuoi.views.SanhTabController">
+   <children>
+      <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="211.0" prefWidth="650.0" spacing="10.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+               <children>
+                  <ImageView fx:id="imageView1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/sanh2.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" styleClass="lblSanh" stylesheets="@../style.css" text="SV _ sanh vang" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+               <children>
+                  <ImageView fx:id="imageView2" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/sanh3.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label styleClass="lblSanh" stylesheets="@../style.css" text="SB _ sanh bac" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+               <children>
+                  <ImageView fx:id="imageView3" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/sanhnn.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label styleClass="lblSanh" stylesheets="@../style.css" text="SN _ sanh ngoc" />
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <DatePicker fx:id="datePicker">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </DatePicker>
+      <Button mnemonicParsing="false" onAction="#chonNgayToChucTiec" prefHeight="27.0" prefWidth="192.0" text="Next" />
+      <TableView fx:id="tableViewTiec" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="colMaTiec" prefWidth="75.0" text="Ma Tiec" />
+          <TableColumn fx:id="colNgayToChuc" prefWidth="75.0" text="Ngay To Chuc" />
+            <TableColumn fx:id="colMaSanh" prefWidth="75.0" text="Ma Sanh" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</VBox>
